@@ -1,6 +1,7 @@
 # Ruby on Rails チュートリアルのサンプルアプリケーション
 
-これは、次の教材で作られたサンプルアプリケーションです。   
+これは、次の教材で作られたサンプルアプリケーションです。 
+[*デプロイ先*](https://noel99l-rails-tutorial.herokuapp.com/)
 [*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
 [Michael Hartl](http://www.michaelhartl.com/) 著
 
