@@ -21,7 +21,7 @@ module SessionsHelper
       @current_user ||= User.find_by(id: user_id) # @current_user = @current_user || User.find_by(id: session[:user_id]) の短縮形
     elsif (user_id = cookies.signed[:user_id]) #elsif cookies.signed[:user_id] と同じ、この時点でローカル変数user_idに代入することでcookiesメソッドの使用を１回のみに留めている。
       user = User.find_by(id: user_id)
-      if user && user.authenticated?(cookies[:remember_token])
+      if user && user.authenticated?(:remember, cookies[:remember_token])
         log_in user
         @current_user = user
       end
